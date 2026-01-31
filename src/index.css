@@ -1,0 +1,33 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #edebd7;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 4em;
+}
+
+/* Button Styles */
+.button-headers {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+  transition: all 0.2s ease;
+}
+
+.button-headers:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
