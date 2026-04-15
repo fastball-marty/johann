@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .row {
@@ -20,4 +20,13 @@
 .row label + input,
 .row select + label {
   margin-left: 20px;
+}
+
+p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer {
+  padding-top: 100px;
 }
