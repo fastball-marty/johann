@@ -1,10 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
-type ButtonProps = {
-  children: string;
-  onClick?: () => void;
-};
+import { ButtonProps } from "../types/types";
 
 const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   const navigate = useNavigate();

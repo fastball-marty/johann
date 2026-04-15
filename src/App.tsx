@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import "./styles/App.css";
+import "./App.css";
 import Button from "./components/button";
 import Starters from "./pages/Starters";
+import Main from "./pages/Main";
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/starters" replace />} />
         <Route path="/starters" element={<Starters />} />
-        <Route path="/main" element={<Starters />} />
-        <Route path="/cocktails" element={<Starters />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/cocktails" element={<p>None</p>} />
       </Routes>
     </BrowserRouter>
   );
