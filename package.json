@@ -1,4 +1,5 @@
 {
+  "homepage": "https://fastball-marty.github.io/johann/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@types/node": "^16.18.126",
