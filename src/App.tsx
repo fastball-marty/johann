@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Button from "./components/button";
 import Starters from "./pages/Starters";
@@ -7,7 +7,7 @@ import Main from "./pages/Main";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <h1>johann</h1>
 
       <div className="button-container">
@@ -22,7 +22,7 @@ function App() {
         <Route path="/main" element={<Main />} />
         <Route path="/cocktails" element={<p>None</p>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
