@@ -52,3 +52,34 @@
   margin-right: 15px;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #calculator {
+    width: 95%;
+    padding-top: 20px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .break-row {
+    margin-bottom: 30px;
+  }
+
+  .unit-row {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  #calculator button {
+    width: 30%;
+    font-size: 14px;
+  }
+
+  .row select,
+  .unit-row select {
+    width: 100%;
+  }
+}

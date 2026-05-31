@@ -83,6 +83,7 @@ const PriceCalculator = () => {
 
           <label>Price: $</label>
           <input
+            className="break-row"
             value={item1.price}
             onChange={(e) => handleUpdateItem1("price", e.target.value)}
           />
