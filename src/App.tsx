@@ -2,8 +2,8 @@ import React from "react";
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Button from "./components/button";
-import Starters from "./pages/Starters";
-import Main from "./pages/Main";
+import PriceConverter from "./pages/PriceCalculator";
+import UnitConverter from "./pages/UnitConverter";
 
 function App() {
   return (
@@ -11,15 +11,15 @@ function App() {
       <h1>johann</h1>
 
       <div className="button-container">
-        <Button>Starters</Button>
-        <Button>Main</Button>
+        <Button>Price Calculator</Button>
+        <Button>Unit Converter</Button>
         <Button>Cocktails</Button>
       </div>
 
       <Routes>
-        <Route path="/" element={<Navigate to="/starters" replace />} />
-        <Route path="/starters" element={<Starters />} />
-        <Route path="/main" element={<Main />} />
+        <Route path="/" element={<Navigate to="/pricecalculator" replace />} />
+        <Route path="/pricecalculator" element={<PriceConverter />} />
+        <Route path="/unitconverter" element={<UnitConverter />} />
         <Route path="/cocktails" element={<p>None</p>} />
       </Routes>
     </HashRouter>

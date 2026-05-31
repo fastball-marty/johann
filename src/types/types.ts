@@ -6,5 +6,5 @@ export type ButtonProps = {
 export type PriceConversionItem = {
   quantity: string;
   unit: string;
-  price: string;
+  price?: string;
 };

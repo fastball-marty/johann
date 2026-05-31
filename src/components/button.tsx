@@ -6,7 +6,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/${children.toLowerCase()}`);
+    navigate(`/${children.replace(/\s+/g, '').toLowerCase()}`);
   };
 
   return (

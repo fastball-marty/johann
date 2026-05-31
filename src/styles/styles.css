@@ -1,3 +1,4 @@
+/* PriceConverter.tsx */
 #calculator {
   width: 40%;
   margin: auto;
@@ -37,3 +38,17 @@
 .footer {
   margin-top: 100px;
 }
+
+/* UnitConverter.tsx */
+.unit-row {
+  display: grid;
+  grid-template-columns: 90px 70px 90px;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 10px;
+}
+
+.row select {
+  margin-right: 15px;
+}
+

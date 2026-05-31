@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/styles.css";
 import { PriceConversionItem } from "../types/types";
 
-const Starters = () => {
+const PriceCalculator = () => {
   const [item1, setItem1] = useState<PriceConversionItem>({
     quantity: "10",
     unit: "lb",
@@ -53,7 +53,7 @@ const Starters = () => {
     const g1 = parseFloat(item1.quantity) * unitToGrams[item1.unit];
     const g2 = parseFloat(item2.quantity) * unitToGrams[item2.unit];
 
-    const pricePerGram = parseFloat(item1.price) / g1;
+    const pricePerGram = parseFloat(item1.price ?? "") / g1;
     const p2 = pricePerGram * g2;
 
     handleUpdateItem2("price", p2.toFixed(2));
@@ -63,8 +63,7 @@ const Starters = () => {
     <>
       <p>
         <i>
-          Enter an item and its price, and a target quantity to calculate its
-          cost.
+          Enter an item and its price, and a target quantity to calculate its cost.
         </i>
       </p>
 
@@ -101,6 +100,7 @@ const Starters = () => {
           >
             {renderUnitOptions()}
           </select>
+          
           <label>Price: $</label>
           <input value={item2.price} disabled />
         </div>
@@ -115,4 +115,4 @@ const Starters = () => {
   );
 };
 
-export default Starters;
+export default PriceCalculator;
