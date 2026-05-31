@@ -4,23 +4,24 @@ import "./App.css";
 import Button from "./components/button";
 import PriceConverter from "./pages/PriceCalculator";
 import UnitConverter from "./pages/UnitConverter";
+import Login from "./pages/Login"
 
 function App() {
   return (
     <HashRouter>
-      <h1>johann</h1>
+      <h1>restaurant.utils</h1>
 
       <div className="button-container">
-        <Button>Price Calculator</Button>
         <Button>Unit Converter</Button>
-        <Button>Cocktails</Button>
+        <Button>Price Calculator</Button>
+        <Button>Login</Button>
       </div>
 
       <Routes>
-        <Route path="/" element={<Navigate to="/pricecalculator" replace />} />
-        <Route path="/pricecalculator" element={<PriceConverter />} />
+        <Route path="/" element={<Navigate to="/unitconverter" replace />} />
         <Route path="/unitconverter" element={<UnitConverter />} />
-        <Route path="/cocktails" element={<p>None</p>} />
+        <Route path="/pricecalculator" element={<PriceConverter />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </HashRouter>
   );

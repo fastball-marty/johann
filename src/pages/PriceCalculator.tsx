@@ -106,7 +106,7 @@ const PriceCalculator = () => {
           <input value={item2.price} disabled />
         </div>
 
-        <button onClick={convert}>Calculate</button>
+        <button onClick={convert} onKeyDown={(e) => e.key === "Enter" ? convert : ''}>Calculate</button>
       </div>
 
       <p className="footer">

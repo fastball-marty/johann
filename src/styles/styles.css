@@ -1,15 +1,16 @@
 /* PriceConverter.tsx */
 #calculator {
-  width: 40%;
+  width: 55%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f1f1ea;
   border: 1px solid black;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding-top: 50px;
+  overflow-x: auto;
 }
 
 .row {
@@ -55,22 +56,17 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   #calculator {
-    width: 95%;
+    width: 90%;
     padding-top: 20px;
   }
 
-  .row {
+  .row, .unit-row {
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
 
   .break-row {
     margin-bottom: 30px;
-  }
-
-  .unit-row {
-    grid-template-columns: 1fr;
-    row-gap: 10px;
   }
 
   #calculator button {

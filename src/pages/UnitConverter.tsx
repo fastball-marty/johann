@@ -90,7 +90,7 @@ const UnitConverter = () => {
           </select>
         </div>
 
-        <button onClick={convert}>Calculate</button>
+        <button onClick={convert} onKeyDown={(e) => e.key === "Enter" ? convert : ''}>Calculate</button>
       </div>
     </>
   );
